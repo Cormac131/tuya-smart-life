@@ -359,6 +359,40 @@ SELECTS: dict[str, tuple[SelectEntityDescription, ...]] = {
             icon="mdi:water-percent",
         ),
     ),
+    # Moes Smart Control Panel Mini
+    # Not documented
+    "dgnzk": (
+        SelectEntityDescription(
+            key=DPCode.LIGHT_MODE,
+            name="Switch light mode",
+            entity_category=EntityCategory.CONFIG,
+            translation_key="light_mode"
+        ),
+        SelectEntityDescription(
+            key=DPCode.RELAY_STATUS,
+            name="Overall relay status",
+            entity_category=EntityCategory.CONFIG,
+            translation_key="panel_relay_status"
+        ),
+        SelectEntityDescription(
+            key=DPCode.RELAY_STATUS_1,
+            name="Relay 1 status",
+            entity_category=EntityCategory.CONFIG,
+            translation_key="panel_relay_status_1"
+        ),
+        SelectEntityDescription(
+            key=DPCode.RELAY_STATUS_2,
+            name="Relay 2 status",
+            entity_category=EntityCategory.CONFIG,
+            translation_key="panel_relay_status_2"
+        ),
+        SelectEntityDescription(
+            key=DPCode.RELAY_STATUS_3,
+            name="Relay 3 status",
+            entity_category=EntityCategory.CONFIG,
+            translation_key="panel_relay_status_3"
+        )
+    ),
 }
 
 # Socket (duplicate of `kg`)
