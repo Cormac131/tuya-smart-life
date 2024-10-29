@@ -37,12 +37,15 @@
     },
     {
       "macaddress": "D81F12*"
+    },
+    {
+      "macaddress": "FC3CD7*"
     }
   ],
   "documentation": "https://www.home-assistant.io/integrations/smartlife",
   "integration_type": "hub",
   "iot_class": "cloud_push",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "requirements": ["tuya-device-sharing-sdk==0.2.0"]
 
 
